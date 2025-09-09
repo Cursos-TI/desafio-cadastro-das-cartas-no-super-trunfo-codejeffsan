@@ -94,7 +94,8 @@ int main() {
     printf("Densidade Populacional: %.2f\n", densidade2);
     printf("PIB per Capita: %.2f", pibper2);
 
-    // Comparação de Atributos    
+    // Comparação de Atributos
+        
     printf("\nO Super Poder da carta 1 é maior queo da carta 2? %d\n", SuperPoderA > SuperPoderB);
 
     return 0;
