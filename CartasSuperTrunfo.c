@@ -13,6 +13,7 @@ int main() {
     int populacao1, populacao2;
     int pontos_turisticos1, pontos_turisticos2;
     float area1, area2, pib1, pib2;
+    float densidade1, densidade2, pibper1, pibper2;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -37,6 +38,9 @@ int main() {
     printf("PIB (use pontos para números decimais): \n");
     scanf(" %f", &pib1);
 
+    densidade1 = populacao1 / area1;
+    pibper1 = pib1 / populacao1;
+
     // Cadastro da segunda carta
 
     printf("Digite o código da seguunda cidade: \n");
@@ -57,6 +61,9 @@ int main() {
     printf("PIB (use pontos para números decimais): \n");
     scanf(" %f", &pib2);
 
+    densidade2 = populacao2 / area2;
+    pibper2 = pib2 / populacao2;
+
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
@@ -68,6 +75,8 @@ int main() {
     printf("Pontos turísticos: %d\n", pontos_turisticos1);
     printf("Área: %.2f km2\n", area1);
     printf("PIB: %.2f\n", pib1);
+    printf("Densidade Populacional: %.2f\n", densidade1);
+    printf("PIB per Capita: %.2f\n", pibper1);
 
     printf("\nCarta 2\n");
     printf("Código: %s\n", codigo2);
@@ -76,6 +85,12 @@ int main() {
     printf("Pontos turísticos: %d\n", pontos_turisticos2);
     printf("Área: %.2f km2\n", area2);
     printf("PIB: %.2f\n", pib2);
+    printf("Densidade Populacional: %.2f\n", densidade2);
+    printf("PIB per Capita: %.2f", pibper2);
 
     return 0;
 }
+// Dicas Adicionais:
+// - Certifique-se de validar as entradas do usuário para garantir que os dados sejam consistentes.
+// - Considere criar funções auxiliares para organizar melhor o código, como uma função para cadastrar uma carta e outra para exibir os dados.
+// - Teste o programa com diferentes entradas para garantir que tudo funcione conforme o esperado.
