@@ -13,7 +13,13 @@ int main() {
     int populacao1, populacao2;
     int pontos_turisticos1, pontos_turisticos2;
     float area1, area2, pib1, pib2;
+
+    // Variáveis do nivel aventureiro
     float densidade1, densidade2, pibper1, pibper2;
+
+    // Variáveis do nivel mestre0
+    float SuperPoderA = populacao1 + area1 + pib1 + pontos_turisticos1 + pibper1 + (1 / densidade1); 
+    float SuperPoderB = populacao2 + area2 + pib2 + pontos_turisticos2 + pibper2 + (1 / densidade2);
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -87,6 +93,8 @@ int main() {
     printf("PIB: %.2f\n", pib2);
     printf("Densidade Populacional: %.2f\n", densidade2);
     printf("PIB per Capita: %.2f", pibper2);
+
+    // Comparação de Atributos    printf("\nO Super Poder da carta 1 é maior queo da carta 2? %d\n", SuperPoderA > SuperPoderB);
 
     return 0;
 }
